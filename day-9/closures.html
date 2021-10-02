@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+      //  Closure is a function inside function where inner function will use outer function variables.
+
+        function abc(){
+            console.log('this is my first  fuction to call');
+            xyz();
+        } 
+        function xyz(){
+            console.log('this is my second  function to call');
+        } abc();
+
+      //  function counterUpdate(){
+           // counter=0;
+           // counter++;
+           // console.log(counter);    //it will return only 1 value 
+      //  }
+     var counterUpdate1 = (function(){
+         counter=0;
+         return function(){
+             counter ++;
+             console.log(counter);
+         }
+     } ());
+    </script>
+</head>
+<body>
+    <h2>closures</h2>
+    <button onclick="counterUpdate1()">click me</button>
+    
+</body>
+</html>

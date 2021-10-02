@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onSubmit(fname,lname){
+            console.log(fname.value);
+            console.log(lname.value);
+            result=fname.value + lname.value;
+            showResult();
+            return result;
+          //  var idValue=document.getElementById(fn);
+          //  console.log(idValue.value);
+        }
+        function showResult(){
+            console.log(result);
+        }
+        
+    </script>
+</head>
+<body>
+    <h3>Document object model</h3>
+   <input type="text" name="firstName" id="fn"><br><br>
+   <input type="text" name="lastName" id="ln"><br><br>
+   <button onclick="onSubmit(fn,ln)">submit</button> 
+
+</body>
+</html>

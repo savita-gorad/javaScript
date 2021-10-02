@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="table-script.js"></script>
+    <style>
+        table th{
+border: 1px solid;
+
+        }
+        #display{
+            margin-top: 100px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid;
+        }    </style>
+</head>
+<body>
+  <div id="data">
+      <form>
+firstname:  <input type="text" placeholder="firstname" id="fname"><br><br>
+lastname: <input type="text" placeholder="lastname" id="lname"><br><br>
+ Email id: <input type="email" placeholder="email id" id="email"><br><br>     
+     <button onclick="AddData(event)">submit</button>
+    </form>
+   </div> 
+
+ <div id="tab">
+     <table id="list" cellspacing="3" cellpadding="3" border="1">
+         <thead>
+      <tr>
+          <th>firstname</th>
+          <th>lasttname</th>
+          <th>Email id</th>
+          
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+</body>
+</html>

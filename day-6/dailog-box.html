@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showAlert(){
+          alert('are you sure you want to continue');
+         console.log('hello alert is called');            /*only ok button is option */
+        }
+        function showConfirm(){
+           confirm('Are you sure you want to continue');
+            console.log('confirm');                         //ok and cancel button is avaible
+        }
+           function showPrompt(){
+             var result= prompt('please enter your age');
+             console.log(result);
+             if(result>18){
+                  console.log('allowed');        //if you enter user input then directly show the output  
+              }
+              else{
+                 console.log(' Not allowed');
+             }
+
+           }
+
+    
+    </script>
+</head>
+<body>
+    <h2>Dialog box</h2>
+    <br><br>
+    <button onclick="showAlert()">Alert</button>  <br><br>
+    <button onclick="showConfirm()">confirm</button>   <br><br>
+    <button onclick="showPrompt()">Prompt</button>
+</body>
+</html>

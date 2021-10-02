@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--first input in array add element-->
+    <p id='add'>array element will added</p>
+
+    <!--second input in array add element-->
+    <h1 id='demo' >mango,orange,apple,banana</h1>
+    <button onclick="adding('demo')">click here</button>
+
+
+
+   
+<script>
+//first method to add element
+
+//const fruit=['apple','orange','mango','banana'];
+//var element=fruit.push('kiwi');
+//console.log(element);
+//document.getElementById('add').innerHTML=fruit;
+
+
+
+//second method to add element
+function adding(demo){
+    var x=document.getElementById('demo').innerHTML;
+    console.log(typeof(x));                           //string
+   var result=[...x,...' kiwi'];
+   console.log(typeof(result));                       //object
+  var arr=result.join('');
+  console.log(typeof(arr));                         //string
+   document.getElementById('demo').innerHTML=arr;
+
+}
+
+    </script>
+</body>
+</html>

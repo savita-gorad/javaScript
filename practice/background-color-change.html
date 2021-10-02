@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h5>js can change background of input text</h5>
+
+   <!--normal bg color will change by id-->
+ <!--  <input type='text' id='color'>  <br><br>
+   <input type="button" onclick="document.getElementById('color').style.background='red'" value="submit"> -->
+
+   <input type="text" id='demo' name="" required> <br><br>
+   <button onkeypress="chgcolor('demo')">submit</button>
+
+<script>
+    
+    
+ function  chgcolor(){
+     x=document.getElementById('demo').value;
+     console.log(x)
+       document.getElementById('demo').backgroundColor="red";
+    return x;
+    }
+    
+</script>
+
+
+</body>
+</html>
